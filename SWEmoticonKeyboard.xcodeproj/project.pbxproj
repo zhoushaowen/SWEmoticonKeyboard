@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		363E7176201348A100FFB3E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 363E7175201348A100FFB3E6 /* AppDelegate.m */; };
+		363E7184201348A100FFB3E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 363E7183201348A100FFB3E6 /* main.m */; };
+		363E719F2013491000FFB3E6 /* SWEmotionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 363E71912013491000FFB3E6 /* SWEmotionCell.m */; };
+		363E71A02013491000FFB3E6 /* Emoticons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 363E71922013491000FFB3E6 /* Emoticons.bundle */; };
+		363E71A12013491000FFB3E6 /* UITextView+Emoticon.m in Sources */ = {isa = PBXBuildFile; fileRef = 363E71932013491000FFB3E6 /* UITextView+Emoticon.m */; };
+		363E71A22013491000FFB3E6 /* SWTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 363E71942013491000FFB3E6 /* SWTextAttachment.m */; };
+		363E71A32013491000FFB3E6 /* SWKeyboardPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = 363E71952013491000FFB3E6 /* SWKeyboardPackage.m */; };
+		363E71A42013491000FFB3E6 /* SWEmotionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 363E71962013491000FFB3E6 /* SWEmotionFlowLayout.m */; };
+		363E71A52013491000FFB3E6 /* SWEmoticon.m in Sources */ = {isa = PBXBuildFile; fileRef = 363E71982013491000FFB3E6 /* SWEmoticon.m */; };
+		363E71A62013491000FFB3E6 /* SWEmoticonStringGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 363E71992013491000FFB3E6 /* SWEmoticonStringGenerator.m */; };
+		363E71A72013491000FFB3E6 /* UITextField+Emoticon.m in Sources */ = {isa = PBXBuildFile; fileRef = 363E719A2013491000FFB3E6 /* UITextField+Emoticon.m */; };
+		363E71A82013491000FFB3E6 /* SWEmotionKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 363E719E2013491000FFB3E6 /* SWEmotionKeyboardView.m */; };
+		363E71AF2013491D00FFB3E6 /* SendContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 363E71AA2013491D00FFB3E6 /* SendContentViewController.m */; };
+		363E71B02013491D00FFB3E6 /* TableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 363E71AC2013491D00FFB3E6 /* TableTableViewCell.m */; };
+		363E71B12013491D00FFB3E6 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 363E71AE2013491D00FFB3E6 /* TableViewController.m */; };
+		363E71B42013494000FFB3E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363E71B22013494000FFB3E6 /* LaunchScreen.storyboard */; };
+		363E71B52013494000FFB3E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363E71B32013494000FFB3E6 /* Main.storyboard */; };
+		363E71B72013494E00FFB3E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 363E71B62013494D00FFB3E6 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		363E7171201348A100FFB3E6 /* SWEmoticonKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWEmoticonKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		363E7174201348A100FFB3E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		363E7175201348A100FFB3E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		363E7182201348A100FFB3E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		363E7183201348A100FFB3E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		363E718B2013491000FFB3E6 /* SWEmotionFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWEmotionFlowLayout.h; sourceTree = "<group>"; };
+		363E718C2013491000FFB3E6 /* SWKeyboardPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWKeyboardPackage.h; sourceTree = "<group>"; };
+		363E718D2013491000FFB3E6 /* UITextField+Emoticon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Emoticon.h"; sourceTree = "<group>"; };
+		363E718E2013491000FFB3E6 /* SWEmoticonStringGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWEmoticonStringGenerator.h; sourceTree = "<group>"; };
+		363E718F2013491000FFB3E6 /* SWEmoticon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWEmoticon.h; sourceTree = "<group>"; };
+		363E71902013491000FFB3E6 /* SWEmotionKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWEmotionKeyboardView.h; sourceTree = "<group>"; };
+		363E71912013491000FFB3E6 /* SWEmotionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWEmotionCell.m; sourceTree = "<group>"; };
+		363E71922013491000FFB3E6 /* Emoticons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emoticons.bundle; sourceTree = "<group>"; };
+		363E71932013491000FFB3E6 /* UITextView+Emoticon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Emoticon.m"; sourceTree = "<group>"; };
+		363E71942013491000FFB3E6 /* SWTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTextAttachment.m; sourceTree = "<group>"; };
+		363E71952013491000FFB3E6 /* SWKeyboardPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWKeyboardPackage.m; sourceTree = "<group>"; };
+		363E71962013491000FFB3E6 /* SWEmotionFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWEmotionFlowLayout.m; sourceTree = "<group>"; };
+		363E71972013491000FFB3E6 /* SWEmoticonKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWEmoticonKeyboard.h; sourceTree = "<group>"; };
+		363E71982013491000FFB3E6 /* SWEmoticon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWEmoticon.m; sourceTree = "<group>"; };
+		363E71992013491000FFB3E6 /* SWEmoticonStringGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWEmoticonStringGenerator.m; sourceTree = "<group>"; };
+		363E719A2013491000FFB3E6 /* UITextField+Emoticon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Emoticon.m"; sourceTree = "<group>"; };
+		363E719B2013491000FFB3E6 /* SWTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTextAttachment.h; sourceTree = "<group>"; };
+		363E719C2013491000FFB3E6 /* UITextView+Emoticon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Emoticon.h"; sourceTree = "<group>"; };
+		363E719D2013491000FFB3E6 /* SWEmotionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWEmotionCell.h; sourceTree = "<group>"; };
+		363E719E2013491000FFB3E6 /* SWEmotionKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWEmotionKeyboardView.m; sourceTree = "<group>"; };
+		363E71A92013491D00FFB3E6 /* SendContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendContentViewController.h; sourceTree = "<group>"; };
+		363E71AA2013491D00FFB3E6 /* SendContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendContentViewController.m; sourceTree = "<group>"; };
+		363E71AB2013491D00FFB3E6 /* TableTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableTableViewCell.h; sourceTree = "<group>"; };
+		363E71AC2013491D00FFB3E6 /* TableTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableTableViewCell.m; sourceTree = "<group>"; };
+		363E71AD2013491D00FFB3E6 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		363E71AE2013491D00FFB3E6 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		363E71B22013494000FFB3E6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		363E71B32013494000FFB3E6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		363E71B62013494D00FFB3E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		363E716E201348A100FFB3E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		363E7168201348A100FFB3E6 = {
+			isa = PBXGroup;
+			children = (
+				363E7173201348A100FFB3E6 /* SWEmoticonKeyboard */,
+				363E7172201348A100FFB3E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		363E7172201348A100FFB3E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				363E7171201348A100FFB3E6 /* SWEmoticonKeyboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		363E7173201348A100FFB3E6 /* SWEmoticonKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				363E718A2013491000FFB3E6 /* SWEmoticonKeyboard */,
+				363E7174201348A100FFB3E6 /* AppDelegate.h */,
+				363E7175201348A100FFB3E6 /* AppDelegate.m */,
+				363E71A92013491D00FFB3E6 /* SendContentViewController.h */,
+				363E71AA2013491D00FFB3E6 /* SendContentViewController.m */,
+				363E71AB2013491D00FFB3E6 /* TableTableViewCell.h */,
+				363E71AC2013491D00FFB3E6 /* TableTableViewCell.m */,
+				363E71AD2013491D00FFB3E6 /* TableViewController.h */,
+				363E71AE2013491D00FFB3E6 /* TableViewController.m */,
+				363E71B22013494000FFB3E6 /* LaunchScreen.storyboard */,
+				363E71B32013494000FFB3E6 /* Main.storyboard */,
+				363E71B62013494D00FFB3E6 /* Assets.xcassets */,
+				363E7182201348A100FFB3E6 /* Info.plist */,
+				363E7183201348A100FFB3E6 /* main.m */,
+			);
+			path = SWEmoticonKeyboard;
+			sourceTree = "<group>";
+		};
+		363E718A2013491000FFB3E6 /* SWEmoticonKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				363E718B2013491000FFB3E6 /* SWEmotionFlowLayout.h */,
+				363E718C2013491000FFB3E6 /* SWKeyboardPackage.h */,
+				363E718D2013491000FFB3E6 /* UITextField+Emoticon.h */,
+				363E718E2013491000FFB3E6 /* SWEmoticonStringGenerator.h */,
+				363E718F2013491000FFB3E6 /* SWEmoticon.h */,
+				363E71902013491000FFB3E6 /* SWEmotionKeyboardView.h */,
+				363E71912013491000FFB3E6 /* SWEmotionCell.m */,
+				363E71932013491000FFB3E6 /* UITextView+Emoticon.m */,
+				363E71942013491000FFB3E6 /* SWTextAttachment.m */,
+				363E71952013491000FFB3E6 /* SWKeyboardPackage.m */,
+				363E71962013491000FFB3E6 /* SWEmotionFlowLayout.m */,
+				363E71972013491000FFB3E6 /* SWEmoticonKeyboard.h */,
+				363E71982013491000FFB3E6 /* SWEmoticon.m */,
+				363E71992013491000FFB3E6 /* SWEmoticonStringGenerator.m */,
+				363E719A2013491000FFB3E6 /* UITextField+Emoticon.m */,
+				363E719B2013491000FFB3E6 /* SWTextAttachment.h */,
+				363E719C2013491000FFB3E6 /* UITextView+Emoticon.h */,
+				363E719D2013491000FFB3E6 /* SWEmotionCell.h */,
+				363E719E2013491000FFB3E6 /* SWEmotionKeyboardView.m */,
+				363E71922013491000FFB3E6 /* Emoticons.bundle */,
+			);
+			path = SWEmoticonKeyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		363E7170201348A100FFB3E6 /* SWEmoticonKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 363E7187201348A100FFB3E6 /* Build configuration list for PBXNativeTarget "SWEmoticonKeyboard" */;
+			buildPhases = (
+				363E716D201348A100FFB3E6 /* Sources */,
+				363E716E201348A100FFB3E6 /* Frameworks */,
+				363E716F201348A100FFB3E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SWEmoticonKeyboard;
+			productName = SWEmoticonKeyboard;
+			productReference = 363E7171201348A100FFB3E6 /* SWEmoticonKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		363E7169201348A100FFB3E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = zhoushaowen;
+				TargetAttributes = {
+					363E7170201348A100FFB3E6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 363E716C201348A100FFB3E6 /* Build configuration list for PBXProject "SWEmoticonKeyboard" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 363E7168201348A100FFB3E6;
+			productRefGroup = 363E7172201348A100FFB3E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				363E7170201348A100FFB3E6 /* SWEmoticonKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		363E716F201348A100FFB3E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				363E71B42013494000FFB3E6 /* LaunchScreen.storyboard in Resources */,
+				363E71A02013491000FFB3E6 /* Emoticons.bundle in Resources */,
+				363E71B72013494E00FFB3E6 /* Assets.xcassets in Resources */,
+				363E71B52013494000FFB3E6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		363E716D201348A100FFB3E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				363E71A72013491000FFB3E6 /* UITextField+Emoticon.m in Sources */,
+				363E71B02013491D00FFB3E6 /* TableTableViewCell.m in Sources */,
+				363E71A52013491000FFB3E6 /* SWEmoticon.m in Sources */,
+				363E7184201348A100FFB3E6 /* main.m in Sources */,
+				363E7176201348A100FFB3E6 /* AppDelegate.m in Sources */,
+				363E71A42013491000FFB3E6 /* SWEmotionFlowLayout.m in Sources */,
+				363E719F2013491000FFB3E6 /* SWEmotionCell.m in Sources */,
+				363E71A82013491000FFB3E6 /* SWEmotionKeyboardView.m in Sources */,
+				363E71A62013491000FFB3E6 /* SWEmoticonStringGenerator.m in Sources */,
+				363E71A32013491000FFB3E6 /* SWKeyboardPackage.m in Sources */,
+				363E71A12013491000FFB3E6 /* UITextView+Emoticon.m in Sources */,
+				363E71A22013491000FFB3E6 /* SWTextAttachment.m in Sources */,
+				363E71B12013491D00FFB3E6 /* TableViewController.m in Sources */,
+				363E71AF2013491D00FFB3E6 /* SendContentViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		363E7185201348A100FFB3E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		363E7186201348A100FFB3E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		363E7188201348A100FFB3E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T2KGXA54VS;
+				INFOPLIST_FILE = SWEmoticonKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.loko.test.SWEmoticonKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		363E7189201348A100FFB3E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T2KGXA54VS;
+				INFOPLIST_FILE = SWEmoticonKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.loko.test.SWEmoticonKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		363E716C201348A100FFB3E6 /* Build configuration list for PBXProject "SWEmoticonKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				363E7185201348A100FFB3E6 /* Debug */,
+				363E7186201348A100FFB3E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		363E7187201348A100FFB3E6 /* Build configuration list for PBXNativeTarget "SWEmoticonKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				363E7188201348A100FFB3E6 /* Debug */,
+				363E7189201348A100FFB3E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 363E7169201348A100FFB3E6 /* Project object */;
+}
