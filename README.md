@@ -1,0 +1,2 @@
+# SWEmoticonKeyboard
+表情键盘,支持UITextView和UITextField,支持表情和文字相互转换
