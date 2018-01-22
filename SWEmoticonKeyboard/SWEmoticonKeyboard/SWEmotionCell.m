@@ -9,10 +9,15 @@
 #import "SWEmotionCell.h"
 #import "SWEmoticon.h"
 
-@implementation SWEmotionCell
+
+@interface SWEmotionCell ()
 {
     UIButton *_btn;
 }
+
+@end
+
+@implementation SWEmotionCell
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];

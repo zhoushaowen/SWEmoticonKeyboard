@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3605B0B22015CEE9002A53E0 /* SWEmticonMagnifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3605B0B12015CEE9002A53E0 /* SWEmticonMagnifierView.m */; };
 		363E7176201348A100FFB3E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 363E7175201348A100FFB3E6 /* AppDelegate.m */; };
 		363E7184201348A100FFB3E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 363E7183201348A100FFB3E6 /* main.m */; };
 		363E719F2013491000FFB3E6 /* SWEmotionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 363E71912013491000FFB3E6 /* SWEmotionCell.m */; };
@@ -28,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3605B0B02015CEE9002A53E0 /* SWEmticonMagnifierView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWEmticonMagnifierView.h; sourceTree = "<group>"; };
+		3605B0B12015CEE9002A53E0 /* SWEmticonMagnifierView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWEmticonMagnifierView.m; sourceTree = "<group>"; };
 		363E7171201348A100FFB3E6 /* SWEmoticonKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWEmoticonKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		363E7174201348A100FFB3E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		363E7175201348A100FFB3E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -115,25 +118,27 @@
 		363E718A2013491000FFB3E6 /* SWEmoticonKeyboard */ = {
 			isa = PBXGroup;
 			children = (
-				363E718B2013491000FFB3E6 /* SWEmotionFlowLayout.h */,
 				363E71972013491000FFB3E6 /* SWEmoticonKeyboard.h */,
-				363E718C2013491000FFB3E6 /* SWKeyboardPackage.h */,
-				363E718D2013491000FFB3E6 /* UITextField+Emoticon.h */,
-				363E718E2013491000FFB3E6 /* SWEmoticonStringGenerator.h */,
-				363E718F2013491000FFB3E6 /* SWEmoticon.h */,
-				363E71902013491000FFB3E6 /* SWEmotionKeyboardView.h */,
-				363E71912013491000FFB3E6 /* SWEmotionCell.m */,
-				363E71932013491000FFB3E6 /* UITextView+Emoticon.m */,
-				363E71942013491000FFB3E6 /* SWTextAttachment.m */,
-				363E71952013491000FFB3E6 /* SWKeyboardPackage.m */,
+				363E718B2013491000FFB3E6 /* SWEmotionFlowLayout.h */,
 				363E71962013491000FFB3E6 /* SWEmotionFlowLayout.m */,
-				363E71982013491000FFB3E6 /* SWEmoticon.m */,
-				363E71992013491000FFB3E6 /* SWEmoticonStringGenerator.m */,
+				363E718C2013491000FFB3E6 /* SWKeyboardPackage.h */,
+				363E71952013491000FFB3E6 /* SWKeyboardPackage.m */,
+				363E718D2013491000FFB3E6 /* UITextField+Emoticon.h */,
 				363E719A2013491000FFB3E6 /* UITextField+Emoticon.m */,
-				363E719B2013491000FFB3E6 /* SWTextAttachment.h */,
 				363E719C2013491000FFB3E6 /* UITextView+Emoticon.h */,
-				363E719D2013491000FFB3E6 /* SWEmotionCell.h */,
+				363E71932013491000FFB3E6 /* UITextView+Emoticon.m */,
+				363E718E2013491000FFB3E6 /* SWEmoticonStringGenerator.h */,
+				363E71992013491000FFB3E6 /* SWEmoticonStringGenerator.m */,
+				363E718F2013491000FFB3E6 /* SWEmoticon.h */,
+				363E71982013491000FFB3E6 /* SWEmoticon.m */,
+				363E71902013491000FFB3E6 /* SWEmotionKeyboardView.h */,
 				363E719E2013491000FFB3E6 /* SWEmotionKeyboardView.m */,
+				3605B0B02015CEE9002A53E0 /* SWEmticonMagnifierView.h */,
+				3605B0B12015CEE9002A53E0 /* SWEmticonMagnifierView.m */,
+				363E719D2013491000FFB3E6 /* SWEmotionCell.h */,
+				363E71912013491000FFB3E6 /* SWEmotionCell.m */,
+				363E719B2013491000FFB3E6 /* SWTextAttachment.h */,
+				363E71942013491000FFB3E6 /* SWTextAttachment.m */,
 				363E71922013491000FFB3E6 /* Emoticons.bundle */,
 			);
 			path = SWEmoticonKeyboard;
@@ -223,6 +228,7 @@
 				363E71A32013491000FFB3E6 /* SWKeyboardPackage.m in Sources */,
 				363E71A12013491000FFB3E6 /* UITextView+Emoticon.m in Sources */,
 				363E71A22013491000FFB3E6 /* SWTextAttachment.m in Sources */,
+				3605B0B22015CEE9002A53E0 /* SWEmticonMagnifierView.m in Sources */,
 				363E71B12013491D00FFB3E6 /* TableViewController.m in Sources */,
 				363E71AF2013491D00FFB3E6 /* SendContentViewController.m in Sources */,
 			);

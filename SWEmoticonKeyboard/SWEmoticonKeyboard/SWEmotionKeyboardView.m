@@ -11,9 +11,12 @@
 #import "SWEmoticon.h"
 #import "SWEmotionFlowLayout.h"
 #import "SWEmotionCell.h"
+#import "SWEmticonMagnifierView.h"
 
 @interface SWEmotionKeyboardView ()<UICollectionViewDelegate,UICollectionViewDataSource>
-
+{
+    NSIndexPath *_longPressIndexPath;
+}
 @property (nonatomic,strong) void(^emotionCallback)(SWEmoticon *emoticon);
 @property (nonatomic,copy) NSArray<SWKeyboardPackage *> *packages;
 @property (nonatomic,strong) UICollectionView *collectionView;
@@ -23,6 +26,8 @@
 @property (nonatomic,strong) UIButton *selectedBtn;
 @property (nonatomic,strong) UIButton *sendBtn;
 @property (nonatomic,copy) NSArray *toolBarBtns;
+@property (nonatomic,strong) SWEmticonMagnifierView *magnifierView;
+@property (nonatomic) BOOL flag;
 
 @end
 
@@ -55,10 +60,13 @@
     [NSLayoutConstraint activateConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_collectionView]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_collectionView)]];
     [NSLayoutConstraint activateConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[_collectionView]-0-[_toolbar(38)]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_collectionView,_toolbar)]];
     [NSLayoutConstraint activateConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_toolbar]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_toolbar)]];
+    [self addLongPressGesture];
 }
 
 - (void)layoutSubviews {
     [super layoutSubviews];
+    if(self.flag) return;
+    self.flag = YES;
     [self selectedCurrentBtn:self.toolBarBtns[1]];
     [self scrollToCurrentIndex:1];
 }
@@ -193,6 +201,10 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    [self outputEmoticonWithIndexPath:indexPath];
+}
+
+- (void)outputEmoticonWithIndexPath:(NSIndexPath *)indexPath {
     SWKeyboardPackage *package = self.packages[indexPath.section];
     SWEmoticon *emoticon = package.emoticons[indexPath.item];
     if(indexPath.section != 0){
@@ -245,6 +257,72 @@
     }else{
         [_sendBtn setBackgroundColor:[UIColor colorWithRed:250/226.0 green:247/226.0 blue:250/226.0 alpha:1.0]];
     }
+}
+
+- (void)addLongPressGesture {
+    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPressGesture:)];
+    longPress.minimumPressDuration = 0.35;
+    //距离触摸点允许移动的最大距离范围
+    longPress.allowableMovement = self.frame.size.width;
+    [self addGestureRecognizer:longPress];
+}
+
+- (SWEmticonMagnifierView *)magnifierView {
+    if(!_magnifierView){
+        _magnifierView = [SWEmticonMagnifierView magnifierView];
+        [self addSubview:_magnifierView];
+    }
+    return _magnifierView;
+}
+
+- (void)handleLongPressGesture:(UILongPressGestureRecognizer *)longPressGesture {
+    switch (longPressGesture.state) {
+        case UIGestureRecognizerStateBegan:
+        {
+            _collectionView.scrollEnabled = NO;
+            _longPressIndexPath = [self longPressEmoticon:longPressGesture];
+        }
+            break;
+            case UIGestureRecognizerStateChanged:
+        {
+            _longPressIndexPath = [self longPressEmoticon:longPressGesture];
+        }
+            break;
+            case UIGestureRecognizerStateEnded:
+            case UIGestureRecognizerStateCancelled:
+        {
+            self.magnifierView.hidden = YES;
+            self.magnifierView.emoticon = nil;
+            _collectionView.scrollEnabled = YES;
+            if(_longPressIndexPath){
+                [self outputEmoticonWithIndexPath:_longPressIndexPath];
+            }
+        }
+            break;
+            
+        default:
+            break;
+    }
+}
+
+- (NSIndexPath *)longPressEmoticon:(UILongPressGestureRecognizer *)longPressGesture {
+    CGPoint point = [longPressGesture locationInView:_collectionView];
+    NSIndexPath *indexPath = [_collectionView indexPathForItemAtPoint:point];
+    if(indexPath == nil) {
+        self.magnifierView.hidden = YES;
+        return nil;
+    }
+    SWEmotionCell *cell = (SWEmotionCell *)[_collectionView cellForItemAtIndexPath:indexPath];
+    if(cell.emoticon.isEmpty || cell.emoticon.isDeleteIcon){
+        self.magnifierView.hidden = YES;
+    }
+    CGRect convertRect = [cell.btn.superview convertRect:cell.btn.frame toView:self];
+    CGRect rect = self.magnifierView.frame;
+    rect.origin = CGPointMake(convertRect.origin.x - (rect.size.width-convertRect.size.width)/2.0f, convertRect.origin.y - (rect.size.height - convertRect.size.height) - 10);
+    self.magnifierView.frame = rect;
+    self.magnifierView.emoticon = cell.emoticon;
+    self.magnifierView.hidden = NO;
+    return indexPath;
 }
 
 

@@ -77,9 +77,7 @@
 - (void)setPng:(NSString *)png {
     _png = [png copy];
     NSString *path = [[NSBundle mainBundle] pathForResource:self.ID ofType:nil inDirectory:@"Emoticons.bundle"];
-//    if([_png hasSuffix:@".png"]){
-//        _png = [[_png substringToIndex:_png.length - 4] stringByAppendingString:@"@2x.png"];
-//    }
+    //这里不需要对@2x和@3x图片进行判断,因为系统会自动进行区分加载,不需要在后面补上@XX
     self.pngPath = [path stringByAppendingPathComponent:_png];
 }
 
