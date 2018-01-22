@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-  s.name         = "YDIMKit"
+  s.name         = "SWEmoticonKeyboard"
 
   s.version      = "0.0.1"
 
