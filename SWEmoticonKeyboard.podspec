@@ -16,9 +16,9 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/zhoushaowen/SWEmoticonKeyboard.git", :tag => s.version }
 
-  s.source_files  = "SWEmoticonKeyboard/*.{h,m}"
+  s.source_files  = "SWEmoticonKeyboard/SWEmoticonKeyboard/*.{h,m}"
 
-  s.resources  = "SWEmoticonKeyboard/Emoticons.bundle"
+  s.resources  = "SWEmoticonKeyboard/SWEmoticonKeyboard/Emoticons.bundle"
   
   s.requires_arc = true
 

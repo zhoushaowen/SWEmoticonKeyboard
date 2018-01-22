@@ -116,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				363E718B2013491000FFB3E6 /* SWEmotionFlowLayout.h */,
+				363E71972013491000FFB3E6 /* SWEmoticonKeyboard.h */,
 				363E718C2013491000FFB3E6 /* SWKeyboardPackage.h */,
 				363E718D2013491000FFB3E6 /* UITextField+Emoticon.h */,
 				363E718E2013491000FFB3E6 /* SWEmoticonStringGenerator.h */,
@@ -126,7 +127,6 @@
 				363E71942013491000FFB3E6 /* SWTextAttachment.m */,
 				363E71952013491000FFB3E6 /* SWKeyboardPackage.m */,
 				363E71962013491000FFB3E6 /* SWEmotionFlowLayout.m */,
-				363E71972013491000FFB3E6 /* SWEmoticonKeyboard.h */,
 				363E71982013491000FFB3E6 /* SWEmoticon.m */,
 				363E71992013491000FFB3E6 /* SWEmoticonStringGenerator.m */,
 				363E719A2013491000FFB3E6 /* UITextField+Emoticon.m */,
