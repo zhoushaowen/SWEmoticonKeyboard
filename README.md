@@ -2,7 +2,9 @@
 表情键盘,支持UITextView和UITextField,支持表情和文字相互转换
 
 cocoapods导入:
+
 ###pod 'SWEmoticonKeyboard'### 
+
 ***亮点:***
 1.同时支持UITextView和UITextField的表情输入
 
