@@ -3,7 +3,7 @@
 
 cocoapods导入:
 
-###pod 'SWEmoticonKeyboard'### 
+**pod 'SWEmoticonKeyboard'**
 
 ***亮点:***
 1.同时支持UITextView和UITextField的表情输入
