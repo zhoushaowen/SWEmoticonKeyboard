@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D587E70B592C4A8D1F30A52 /* libPods-SWEmoticonKeyboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B4E68182D7416DD780198C /* libPods-SWEmoticonKeyboard.a */; };
 		3605B0B22015CEE9002A53E0 /* SWEmticonMagnifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3605B0B12015CEE9002A53E0 /* SWEmticonMagnifierView.m */; };
 		363E7176201348A100FFB3E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 363E7175201348A100FFB3E6 /* AppDelegate.m */; };
 		363E7184201348A100FFB3E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 363E7183201348A100FFB3E6 /* main.m */; };
@@ -26,6 +27,7 @@
 		363E71B42013494000FFB3E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363E71B22013494000FFB3E6 /* LaunchScreen.storyboard */; };
 		363E71B52013494000FFB3E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363E71B32013494000FFB3E6 /* Main.storyboard */; };
 		363E71B72013494E00FFB3E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 363E71B62013494D00FFB3E6 /* Assets.xcassets */; };
+		36E88BFB201711E800612DF7 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E88BFA201711E800612DF7 /* YYFPSLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,11 @@
 		363E71B22013494000FFB3E6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		363E71B32013494000FFB3E6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		363E71B62013494D00FFB3E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36E88BF9201711E800612DF7 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		36E88BFA201711E800612DF7 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		4D3C9FC34839C9D7D42B24A4 /* Pods-SWEmoticonKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEmoticonKeyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWEmoticonKeyboard/Pods-SWEmoticonKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		D952DA341DE0F8862A6D7C13 /* Pods-SWEmoticonKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEmoticonKeyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWEmoticonKeyboard/Pods-SWEmoticonKeyboard.release.xcconfig"; sourceTree = "<group>"; };
+		F8B4E68182D7416DD780198C /* libPods-SWEmoticonKeyboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SWEmoticonKeyboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,17 +79,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D587E70B592C4A8D1F30A52 /* libPods-SWEmoticonKeyboard.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2600CFAF1B3C7896FC40AF00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8B4E68182D7416DD780198C /* libPods-SWEmoticonKeyboard.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		363E7168201348A100FFB3E6 = {
 			isa = PBXGroup;
 			children = (
 				363E7173201348A100FFB3E6 /* SWEmoticonKeyboard */,
 				363E7172201348A100FFB3E6 /* Products */,
+				482AFDAD735E85851ABA7CB2 /* Pods */,
+				2600CFAF1B3C7896FC40AF00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +126,7 @@
 				363E71AE2013491D00FFB3E6 /* TableViewController.m */,
 				363E71B22013494000FFB3E6 /* LaunchScreen.storyboard */,
 				363E71B32013494000FFB3E6 /* Main.storyboard */,
+				36E88BFC201761D500612DF7 /* vendor */,
 				363E71B62013494D00FFB3E6 /* Assets.xcassets */,
 				363E7182201348A100FFB3E6 /* Info.plist */,
 				363E7183201348A100FFB3E6 /* main.m */,
@@ -144,6 +163,24 @@
 			path = SWEmoticonKeyboard;
 			sourceTree = "<group>";
 		};
+		36E88BFC201761D500612DF7 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				36E88BF9201711E800612DF7 /* YYFPSLabel.h */,
+				36E88BFA201711E800612DF7 /* YYFPSLabel.m */,
+			);
+			path = vendor;
+			sourceTree = "<group>";
+		};
+		482AFDAD735E85851ABA7CB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D3C9FC34839C9D7D42B24A4 /* Pods-SWEmoticonKeyboard.debug.xcconfig */,
+				D952DA341DE0F8862A6D7C13 /* Pods-SWEmoticonKeyboard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 363E7187201348A100FFB3E6 /* Build configuration list for PBXNativeTarget "SWEmoticonKeyboard" */;
 			buildPhases = (
+				B65A8F3FE8B9812A865F5A6B /* [CP] Check Pods Manifest.lock */,
 				363E716D201348A100FFB3E6 /* Sources */,
 				363E716E201348A100FFB3E6 /* Frameworks */,
 				363E716F201348A100FFB3E6 /* Resources */,
+				B1E8AB17A7959B6B5764178F /* [CP] Embed Pods Frameworks */,
+				96ED80BA42F099B9850079B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -211,6 +251,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		96ED80BA42F099B9850079B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SWEmoticonKeyboard/Pods-SWEmoticonKeyboard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1E8AB17A7959B6B5764178F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SWEmoticonKeyboard/Pods-SWEmoticonKeyboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B65A8F3FE8B9812A865F5A6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SWEmoticonKeyboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		363E716D201348A100FFB3E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -218,6 +309,7 @@
 			files = (
 				363E71A72013491000FFB3E6 /* UITextField+Emoticon.m in Sources */,
 				363E71B02013491D00FFB3E6 /* TableTableViewCell.m in Sources */,
+				36E88BFB201711E800612DF7 /* YYFPSLabel.m in Sources */,
 				363E71A52013491000FFB3E6 /* SWEmoticon.m in Sources */,
 				363E7184201348A100FFB3E6 /* main.m in Sources */,
 				363E7176201348A100FFB3E6 /* AppDelegate.m in Sources */,
@@ -343,6 +435,7 @@
 		};
 		363E7188201348A100FFB3E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D3C9FC34839C9D7D42B24A4 /* Pods-SWEmoticonKeyboard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -358,6 +451,7 @@
 		};
 		363E7189201348A100FFB3E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D952DA341DE0F8862A6D7C13 /* Pods-SWEmoticonKeyboard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

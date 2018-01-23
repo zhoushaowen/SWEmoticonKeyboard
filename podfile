@@ -1,0 +1,3 @@
+target "SWEmoticonKeyboard" do
+pod 'YYKit'
+end

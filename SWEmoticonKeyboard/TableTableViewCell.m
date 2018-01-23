@@ -7,17 +7,21 @@
 //
 
 #import "TableTableViewCell.h"
+#import <YYLabel.h>
+#import "SWTextAttachment.h"
 
 @implementation TableTableViewCell
 {
-    UILabel *_label;
+    YYLabel *_label;
 }
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if(self){
         self.selectionStyle = UITableViewCellSelectionStyleNone;
-        _label = [UILabel new];
+        _label = [YYLabel new];
+        _label.fadeOnAsynchronouslyDisplay = NO;
+        _label.displaysAsynchronously = YES;
         _label.font = [UIFont systemFontOfSize:18];
         [self.contentView addSubview:_label];
         _label.translatesAutoresizingMaskIntoConstraints = NO;
