@@ -192,8 +192,6 @@
 				363E716D201348A100FFB3E6 /* Sources */,
 				363E716E201348A100FFB3E6 /* Frameworks */,
 				363E716F201348A100FFB3E6 /* Resources */,
-				B1E8AB17A7959B6B5764178F /* [CP] Embed Pods Frameworks */,
-				96ED80BA42F099B9850079B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,36 +250,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		96ED80BA42F099B9850079B8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SWEmoticonKeyboard/Pods-SWEmoticonKeyboard-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B1E8AB17A7959B6B5764178F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SWEmoticonKeyboard/Pods-SWEmoticonKeyboard-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B65A8F3FE8B9812A865F5A6B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

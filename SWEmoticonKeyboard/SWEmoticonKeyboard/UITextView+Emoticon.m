@@ -29,18 +29,25 @@ static void *sw_emoticonDelegate_key = &sw_emoticonDelegate_key;
 @dynamic sw_emoticonDelegate;
 
 + (void)load {
-    [self exchangeMethodWithSystemSelector:@selector(initWithFrame:textContainer:) customSelector:@selector(swEmoticon_initWithFrame:textContainer:)];
-    [self exchangeMethodWithSystemSelector:@selector(initWithCoder:) customSelector:@selector(swEmoticon_initWithCoder:)];
-    [self exchangeMethodWithSystemSelector:@selector(copy:) customSelector:@selector(swEmoticon_copy:)];
-    [self exchangeMethodWithSystemSelector:@selector(paste:) customSelector:@selector(swEmoticon_paste:)];
-    [self exchangeMethodWithSystemSelector:@selector(becomeFirstResponder) customSelector:@selector(swEmoticon_becomeFirstResponder)];
-    [self exchangeMethodWithSystemSelector:@selector(resignFirstResponder) customSelector:@selector(swEmoticon_resignFirstResponder)];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [self exchangeMethodWithSystemSelector:@selector(initWithFrame:textContainer:) customSelector:@selector(swEmoticon_initWithFrame:textContainer:)];
+        [self exchangeMethodWithSystemSelector:@selector(initWithCoder:) customSelector:@selector(swEmoticon_initWithCoder:)];
+        [self exchangeMethodWithSystemSelector:@selector(copy:) customSelector:@selector(swEmoticon_copy:)];
+        [self exchangeMethodWithSystemSelector:@selector(paste:) customSelector:@selector(swEmoticon_paste:)];
+        [self exchangeMethodWithSystemSelector:@selector(becomeFirstResponder) customSelector:@selector(swEmoticon_becomeFirstResponder)];
+        [self exchangeMethodWithSystemSelector:@selector(resignFirstResponder) customSelector:@selector(swEmoticon_resignFirstResponder)];
+    });
 }
 
 + (void)exchangeMethodWithSystemSelector:(SEL)systemSelector customSelector:(SEL)customSelector {
     Method systemMethod = class_getInstanceMethod([self class], systemSelector);
     Method customMethod = class_getInstanceMethod([self class], customSelector);
-    method_exchangeImplementations(systemMethod, customMethod);
+    if(class_addMethod([self class], systemSelector, method_getImplementation(customMethod), method_getTypeEncoding(customMethod))){
+        class_replaceMethod([self class], customSelector, method_getImplementation(systemMethod), method_getTypeEncoding(systemMethod));
+    }else{
+        method_exchangeImplementations(systemMethod, customMethod);
+    }
 }
 
 - (instancetype)swEmoticon_initWithFrame:(CGRect)frame textContainer:(nullable NSTextContainer *)textContainer {
